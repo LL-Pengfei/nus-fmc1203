@@ -1,0 +1,54 @@
+\documentclass[answers,a4paper,11pt]{exam}
+\usepackage{hyperref}
+\ifx\pdftexversion\undefined
+\usepackage{epsfig}
+\else
+\usepackage[pdftex]{graphics}
+\fi
+\usepackage{epsfig}
+
+\begin{document}
+\extraheadheight{.5in}
+\firstpageheader{\large\sf FMC1203}%
+{\large\sf National University of Singapore\\ School of Computing \\
+\LARGE\sf Randomization}%
+{\large\sf Semester 2 11/12}
+\firstpageheadrule
+\pagestyle{headandfoot}
+Doing things randomly is not as bad as it sounds!  In computing, randomization is a useful technique to (among many other things): (i) get rid of any undesirable but common patterns in the data input, (ii) prevent undesirable synchronization, and (iii) making things unpredictable.
+
+\begin{questions}
+\question
+Quicksort has the average running time of $O(N log N)$ but worst case running time of $O(N)$.  
+\begin{parts}
+\part
+Describe the type of inputs that would lead to worst case running time for quicksort.
+\fillwithdottedlines{3in}
+\part
+Explain how you can change quicksort such that the worst case running time can be prevented with high probability.
+\fillwithdottedlines{3in}
+\end{parts}
+\newpage
+\question
+Consider a classroom of highly responsive students, where each and everyone will respond immediately to any question asked by the professor during class.  The professor, however, is old and will have trouble hearing if more than one student speaks at the same time.  In some cases, the professor only needs one answer (e.g., When the professor asked, ``Err.. what year is this?'') so it suffices for one of the students to reply.
+
+How can the students change the way they respond to the professor (without prior coordination) so that only one student reply?
+
+(Note: the same set of techniques are used in distributed coordination of network protocols)
+\fillwithdottedlines{3in}
+\newpage
+\question
+\begin{parts}
+\part
+You can prevent a malicous party from overhearing the password you send over the network to the server by sending a hashed version of the password.  This method, however, does not prevent \textit{replay attack}, where a malicious party can keep a copy of the hashed password and send it to the server later, thus pretending to be you (without knowing your password!) 
+
+We can use a nonce (a single-used random number) to thwart the attack.  Explain how/why.
+\fillwithdottedlines{3in}
+\part
+A server normally stores only hashed version of the passwords.  It is, however, possible for someone to build a \textit{rainbow table} that lists all possible passwords (say, less than 10 characters) and their associated hashed values.  Given a hashed password, it is now possible to do a look up and find out what the password is!
+
+Explain how random numbers can be used to help thwart such brute-force attack.
+\fillwithdottedlines{3in}
+\end{parts}
+\end{questions}
+\end{document}

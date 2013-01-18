@@ -1,0 +1,55 @@
+\documentclass[answers,a4paper,11pt]{exam}
+\usepackage{hyperref}
+\ifx\pdftexversion\undefined
+\usepackage{epsfig}
+\else
+\usepackage[pdftex]{graphics}
+\fi
+\usepackage{epsfig}
+
+\begin{document}
+\extraheadheight{.5in}
+\firstpageheader{\large\sf FMC1203}%
+{\large\sf National University of Singapore\\ School of Computing \\
+\LARGE\sf Recursion}%
+{\large\sf Semester 2 11/12}
+\firstpageheadrule
+\pagestyle{headandfoot}
+
+\begin{questions}
+\question
+In computer graphics, nature scenes can often be generated recursively.  Find out how mountains can be generated with a recursive procedure.
+\fillwithdottedlines{5in}
+\newpage
+
+\question
+An anagram of a phrase is a rearrangement of non-space characters in the phrase to form another string consisting of words from a dictionary.  For example, an anagram for "Mr. Ooi Wei Tsang" is "Two Same Origin".
+
+You are given a phrase and a dictionary of words.  Your task is to find all anagrams of the phrase with words from the dictionary.  Explain how you would solve the task, using the help of recursion.
+
+%See \url{http://www.ssynth.co.uk/~gay/anagott.html}
+\fillwithdottedlines{5in}
+\newpage
+\question
+
+Bucket fill is a tool that is commonly used in painting application to completely paint a region (bounded by another color) with a given color.
+
+How would you implement bucket fill recursively?
+
+\fillwithdottedlines{5in}
+\newpage
+\question
+
+Ray Tracing is a recursive technique to generate realistic synthetic images.  The technique is recursive in nature.  How does ray tracing work?
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.3]{glasses.jpg}
+\caption{"Glasses" by Gilles Tran (2006)}
+\end{center}
+\end{figure}
+
+\fillwithdottedlines{4in}
+\end{questions}
+
+\end{document}

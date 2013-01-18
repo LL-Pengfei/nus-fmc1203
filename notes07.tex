@@ -1,0 +1,78 @@
+\documentclass[answers,a4paper,11pt]{exam}
+\usepackage{hyperref}
+\ifx\pdftexversion\undefined
+\usepackage{epsfig}
+\else
+\usepackage[pdftex]{graphics}
+\fi
+\usepackage{epsfig}
+
+\begin{document}
+\extraheadheight{.5in}
+\firstpageheader{\large\sf FMC1203}%
+{\large\sf National University of Singapore\\ School of Computing \\
+\LARGE\sf Reduction}%
+{\large\sf Semester 2 11/12}
+\firstpageheadrule
+\pagestyle{headandfoot}
+
+\begin{questions}
+\question
+A problem $P$ can be \textit{reduced} to another problem $Q$, if we can use a solution that solves $Q$ to help solves $P$.  The cost of solving $P$ is then $k$ times the cost of solving $Q$ plus the cost of reducing $P$ to $Q$, where $k$ is the number of times the solution of $Q$ is used.
+
+Reducing one problem to another is useful in a few ways:
+\begin{itemize}
+		\item if we know how to solve $Q$, we can solve $P$
+		\item if we know that $P$ is hard to solve, then $Q$ is also hard to solve
+\end{itemize}
+
+\newpage
+\question
+Show that the following problem can be reduced to the problem of sorting.
+\begin{parts}
+		\part Given an array of integers, find the median of the array
+\fillwithdottedlines{2in}
+		\part Given an array of integers and a integer $K$, find all pairs of numbers that sum up to $K$.
+\fillwithdottedlines{2in}
+		\part Given an array of integers, find if the elements in the array is unique.
+\fillwithdottedlines{2in}
+\end{parts}
+
+\newpage
+\question
+Consider the following two problems: 
+
+\textbf{3-COLLINEAR}: Given a set of points $P$,  are there three points in $P$ that lie on the same line?
+
+\textbf{3-SUM}: Given a set of numbers $S$  are there three numbers in $S$ sum up to 0?
+
+Show that 3-SUM can be reduced to 3-COLLINEAR.
+
+%See \url{http://www.ssynth.co.uk/~gay/anagott.html}
+\fillwithdottedlines{5in}
+
+%\newpage
+%\question
+%Consider the \textbf{Traveling Salesmen Problem}: a saleman needs to visit $N$ cities, starting and ending at the same city.  The saleman wants to find the order to visit the $N$ cities such that the travel cost is less than
+%
+%\fillwithdottedlines{5in}
+
+\newpage
+\question
+Consider the \textbf{Halting Problem}: Given a program $P$ and an input $I$, which $P$ halts when run with input $I$?  The halting problem can be shown to be \textit{undecidable} -- noone can write a program that decides if another program $P$ halts on a given input $I$.
+
+Show that it is not possible to write a program that decides, given two programs $P_1$ and $P_2$, whether $P_1$ and $P_2$ will always give the same output given the same input.
+
+\fillwithdottedlines{5in}
+
+\newpage
+\question
+An optimization problem is one that has the form: find the maximum or minimum of of an objective function.  For example, the minimum spanning tree problem is an optimization problem: find the minimum cost of a spanning tree in a graph.
+
+Each optimization problem has an equivalent \textit{decision version} of the problem: is there a solution such that the objective function is less than or greater than a given value $K$?  For example, is there a spanning tree in a graph with a cost less than $K$?
+
+\fillwithdottedlines{5in}
+
+
+\end{questions}
+\end{document}

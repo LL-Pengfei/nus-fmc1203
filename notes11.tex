@@ -1,0 +1,58 @@
+\documentclass[answers,a4paper,11pt]{exam}
+\usepackage{hyperref}
+\ifx\pdftexversion\undefined
+\usepackage{epsfig}
+\else
+\usepackage[pdftex]{graphics}
+\fi
+\usepackage{epsfig}
+
+\begin{document}
+\extraheadheight{.5in}
+\firstpageheader{\large\sf FMC1203}%
+{\large\sf National University of Singapore\\ School of Computing \\
+\LARGE\sf Hashing}%
+{\large\sf Semester 2 11/12}
+\firstpageheadrule
+\pagestyle{headandfoot}
+A hash function is a mathematical function that maps one sequence of bits, called \textit{hash key} to another (usually shorter) sequence of bits, called \textit{hash value}.  Hash functions, with different properties, can be useful in many ways in computing.
+
+\begin{questions}
+\question
+A hash function can have the following property: two keys that are similar are hashed into two very different values.
+
+\begin{parts}
+\part
+Describe how such hash function can be useful in looking up a specific information from a large amount of data.
+\fillwithdottedlines{3in}
+\part
+What is Bloom filter?  Describe how such hash function can be useful in Bloom filter.
+\fillwithdottedlines{3in}
+\end{parts}
+\newpage
+\question
+A hash function can have the following property: two keys that are similar are hashed into similar values.
+
+Explain how such hash function can be useful in detecting copyright infringement for video and audio files.
+\fillwithdottedlines{3in}
+\question
+A hash function can have the following property: given a hashed value, it is difficult to find out which key is hashed to this value.  It is also difficult to find another key that is hashed to the same value.
+
+Such hash function is especially useful in computer security.
+\begin{parts}
+\part
+Explain how such hash function is useful for storing passwords.
+\fillwithdottedlines{2in}
+\part
+Explain how such hash function can be used to prevent cheating in two player games.
+\fillwithdottedlines{2in}
+\part
+Explain how such hash function can be used to verify the correctness of a file or a message.
+\fillwithdottedlines{2in}
+\part
+Explain how such hash function can be used to verify the authenticity of a file or a message.
+\fillwithdottedlines{2in}
+\end{parts}
+
+\end{questions}
+\end{document}

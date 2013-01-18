@@ -1,0 +1,89 @@
+\documentclass[answers,a4paper,11pt]{exam}
+\usepackage{hyperref}
+\ifx\pdftexversion\undefined
+\usepackage{epsfig}
+\else
+\usepackage[pdftex]{graphics}
+\fi
+\usepackage{epsfig}
+
+\begin{document}
+\extraheadheight{.5in}
+\firstpageheader{\large\sf FMC1203}%
+{\large\sf National University of Singapore\\ School of Computing \\
+\LARGE\sf Invariant}%
+{\large\sf Semester 2 11/12}
+\firstpageheadrule
+\pagestyle{headandfoot}
+
+\begin{questions}
+\question
+
+After the recent CNY reunion dinner, Ah Kow took out a chocolate bar to share with his cute little nieces and nephews.  His chocolate bar consists of $x$ rows and $y$ columns of little chocolate squares, and (how convenient!) Ah Kow has $x \times y$ nieces and nephews in total!  Ah Kow wants to break the chocolate bar into the $1 \times 1$ chocolate squares and give each square to each of his nieces and nephews.
+
+Each time, Ah Kow can only break a piece of chocolate either horizontally or vertically.
+
+How many breaks does Ah Kow need to make?
+
+\begin{center}
+\includegraphics[scale=0.5]{chocolate.jpg}
+\end{center}
+
+\fillwithdottedlines{4in}
+\newpage
+\question
+\textbf{Black and White}
+% Adapted from \url{http://www.cut-the-knot.org/SimpleGames/one_two.shtml}
+
+In the game of Black and White, two players start with a random set of cards on the table.  The cards are either black or white in color.  Each player chooses a side (either black or white).  On each move a player selects two cards. These two are replaced with a single one according to the following rule:
+
+\begin{quote}
+Two cards of identical colors are replaced with a black card.  Two cards of a different colors are replaced with a white card.
+\end{quote}
+
+At the end of the game, when only one card remains, the player sided with the remaining color is the winner.
+
+Is there a strategy that a player can use to win 100\% of the time?
+
+\fillwithdottedlines{5in}
+
+\newpage
+\question
+\textbf{Black, White, and Red}
+Now consider a slightly different one-player game using cards of three different colors: black, white, and red.  On each move, the player must select two cards of a different colors.  These two are replaced with a single one of the remaining color.  (e.g., selecting a red card and a white card replaces these two cards with a black card).  
+
+The goal of the game is to reach a state where all the cards are of the \textit{same} color.
+
+Is it always possible?  What if we want to reach a state where all the cards are of a \textit{specified} color? (e.g., all black).
+
+\fillwithdottedlines{5in}
+
+\newpage
+\question
+\textbf{Knight on a Chessboard, I}
+
+\begin{center}
+\includegraphics[scale=0.3]{chessboard.png}
+\end{center}
+
+A knight is placed on an empty chessboard.  Your goal is to move the knight piece in such a way that it landed on a black square after five moves.
+
+Is it always possible?  If so, what should the strategy be?
+
+\fillwithdottedlines{5in}
+
+\newpage
+\question
+\textbf{Knight on a Chessboard, II}
+
+Two players $A$ and $B$ play a game on a empty chessboard with a knight piece. 
+At the beginning, $A$ places the knight on any square, and $B$ moves the knight.
+$A$ and $B$ then takes turn to move the knight, but they can only move it to a square that it has never been before.  The player who has no move left loses.
+
+Is there a strategy that a player can use to always win the game?
+
+\fillwithdottedlines{5in}
+
+\end{questions}
+
+\end{document}

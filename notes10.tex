@@ -1,0 +1,45 @@
+\documentclass[answers,a4paper,11pt]{exam}
+\usepackage{hyperref}
+\ifx\pdftexversion\undefined
+\usepackage{epsfig}
+\else
+\usepackage[pdftex]{graphics}
+\fi
+\usepackage{epsfig}
+
+\begin{document}
+\extraheadheight{.5in}
+\firstpageheader{\large\sf FMC1203}%
+{\large\sf National University of Singapore\\ School of Computing \\
+\LARGE\sf Parallel and Distributed Computing}%
+{\large\sf Semester 2 11/12}
+\firstpageheadrule
+\pagestyle{headandfoot}
+In scenarios where it becomes ineffecient or inadequate to store the data in one place and execute a task in one place, one can turn to parallel and distributed computing as a solution.
+
+\begin{questions}
+\question
+In task parallelism, many tasks (usually the same kind) are carried out at the same time in different places.  The task results may have to be collated at the end.
+
+In data parallelism, the data are stored into, or retrieved from, different places at the same time.
+
+Give a few examples of task parallelism and data parallelism in both computing and non-computing domain.
+\fillwithdottedlines{3in}
+
+\question
+What are some considerations that you have to be aware of before you parallelize a task?
+\fillwithdottedlines{3in}
+
+\newpage
+\question
+In distributed computing, a task is divided into two or more subtasks, and is carried out in different places.  Data can also be stored in, and retrieved from, different places.
+
+Give a few examples of distributed task computation and distributed data storage in both computing and non-computing domain.
+\fillwithdottedlines{3in}
+
+\question
+What are some considerations that you have to be aware of before you distribute data or task to different places?
+\fillwithdottedlines{3in}
+
+\end{questions}
+\end{document}

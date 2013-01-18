@@ -1,0 +1,61 @@
+\documentclass[answers,a4paper,11pt]{exam}
+\usepackage{hyperref}
+\ifx\pdftexversion\undefined
+\usepackage{epsfig}
+\else
+\usepackage[pdftex]{graphics}
+\fi
+\usepackage{epsfig}
+
+\begin{document}
+\extraheadheight{.5in}
+\firstpageheader{\large\sf FMC1203}%
+{\large\sf National University of Singapore\\ School of Computing \\
+\LARGE\sf Caching}%
+{\large\sf Semester 2 11/12}
+\firstpageheadrule
+\pagestyle{headandfoot}
+
+Caching is a universal technique to reduce the cost and delay in accessing data by storing the needed data items in an easier-to-access location (called the \textit{cache}).
+\begin{questions}
+\question
+Give some examples of caching in non-computing domains.
+\fillwithdottedlines{1in}
+\question
+Give some examples of caching in the computing domain.
+\fillwithdottedlines{2in}
+\question
+Generally, we cannot store every data item in the cache.  Why not?
+\fillwithdottedlines{1in}
+\question
+Caching is most effective when there is a \textit{locality of reference} to the access pattern of the data items.  Explain what does this mean?
+\fillwithdottedlines{2in}
+\question
+The effectiveness of caching can be measured using \textit{hit rate}.  What is the definition of \textit{hit rate}?
+\fillwithdottedlines{1in}
+\question
+If we cannot store every data item in the cache, we need to decide which data items to store.  An algorithm to decide which existing data item in the cache is to be replaced with a new item is called the \textit{cache replacement algorithm}.  
+
+Suppose that you know which data items you want to access in the future.  Give a cache replacement algorithm that maximize the hit rate.
+\fillwithdottedlines{2in}
+\question
+In practice, we do not know which data items to access in the future.  Thus, we can only approximate the optimal algorithm above.  Many cache replacement algorithms have been proposed.  One of the simpler and effective algorithms is the \textit{least recently used} (LRU) algorithm.  Explain how LRU works and how it can be implemented with a linked list. 
+\fillwithdottedlines{2in}
+\question
+Another issue with caching is \textit{cache consistency}.  Explain why consistency could be an issue.
+\fillwithdottedlines{1in}
+\question
+Give two methods in which we can reduce or eliminate inconsistency in caching.
+\fillwithdottedlines{2in}
+\question
+Closely related to the idea of caching is \textit{prefetching}.  What is prefetching and how is it different from caching?
+\fillwithdottedlines{1in}
+\question
+Give some examples of prefetching in non-computing domains.
+\fillwithdottedlines{1in}
+\question
+Give some examples of prefetching in the computing domain.
+\fillwithdottedlines{2in}
+
+\end{questions}
+\end{document}

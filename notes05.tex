@@ -1,0 +1,59 @@
+\documentclass[answers,a4paper,11pt]{exam}
+\usepackage{hyperref}
+\ifx\pdftexversion\undefined
+\usepackage{epsfig}
+\else
+\usepackage[pdftex]{graphics}
+\fi
+\usepackage{epsfig}
+
+\begin{document}
+\extraheadheight{.5in}
+\firstpageheader{\large\sf FMC1203}%
+{\large\sf National University of Singapore\\ School of Computing \\
+\LARGE\sf Invariant (II)}%
+{\large\sf Semester 2 11/12}
+\firstpageheadrule
+\pagestyle{headandfoot}
+
+\begin{questions}
+\question
+Write the pseudocode of a function that, given an array $A$ of $n$ elements, find the first occurance of a given element $X$ in $A$ if it exists, report an error otherwise.
+
+What are the invariants in this function?
+
+\fillwithdottedlines{5in}
+\newpage
+\question
+
+Write the pseudocode of a function that computes the quotient $q$ and remainder $r$, after dividing a non-negative integer $m$ by a positive integer $y$.
+
+What are the invariants in this function?
+
+\fillwithdottedlines{5in}
+\newpage
+\question
+
+Write down the pseudocode of the binary search algorithm. 
+What are the invariants?
+
+\fillwithdottedlines{5in}
+\newpage
+\question
+
+You have learn about the \textsc{partition} method, which is part of QuickSort.
+
+Write the pseudocode for \textsc{partition}, using invariants to check the correctness of your code.
+
+\fillwithdottedlines{5in}
+
+\newpage
+\question
+
+Design a Java class that encapsulates an NUS internal shuttle bus for the purpose of simulating the internal bus services.  What are the class invariants?
+
+\fillwithdottedlines{5in}
+
+\end{questions}
+
+\end{document}
